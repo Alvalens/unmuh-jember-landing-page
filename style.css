@@ -200,7 +200,6 @@ nav {
 }
 
 .forkafest {
-    position: absolute;
     top: 150px !important;
     font-family: 'Lilita One', cursive;
     font-style: normal !important ;
@@ -220,7 +219,7 @@ nav {
 
 .countdown {
     position: absolute;
-    top: 350px !important;
+    top: 400px !important;
     font-family: 'Lilita One', cursive;
     font-style: normal;
     font-weight: 700;
@@ -235,10 +234,12 @@ nav {
     color: transparent;
 }
 
+
+
 .jam {
     list-style: none;
     position: absolute;
-    top: 400px;
+    top: 450px;
     font-family: 'Lilita One', cursive;
     font-style: normal;
     font-weight: 700;
@@ -254,4 +255,6 @@ nav {
     margin-right: auto;
 }
 
-
+.upgrade {
+    position: absolute;
+}
