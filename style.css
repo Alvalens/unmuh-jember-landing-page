@@ -204,52 +204,100 @@ nav {
 /* ---------------------------- */
 .forkafest {
     position: absolute;
-    top: 150px !important;
-    font-family: 'Lilita One', cursive;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 70px !important;
-    line-height: 65px !important;
-    background: linear-gradient(270deg, #C5D3E9 50%, #0D47A1 100%);
+    width: 412.39px;
+    height: 60px;
+    top: 140px;
+    font-family: 'Lilita One' cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(270deg, #C5D3E9 0%, #104EAD 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    background-size: 200%;
     color: transparent;
-    margin-bottom: 30px;
+}
+
+.upgrade {
+    position: absolute;
+    width: 507.15px;
+    height: 103.78px;
+    top: 230px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    color: #000000;
 }
 
 .countdown {
     position: absolute;
-    top: 350px !important;
-    font-family: 'Lilita One', cursive;
+    width: 420px;
+    height: 60px;
+    top: 350px;
+    font-family: 'Lilita One' cursive;
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 57px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
     background: linear-gradient(270deg, #D2DFF2 0%, #B5C8E6 14.58%, #9BB4DB 28.12%, #7B9BCE 44.27%, #6288C4 56.77%, #507ABD 66.15%, #3C6BB4 76.04%, #0D47A1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+
 }
 
-
-
 .jam {
-    list-style: none;
     position: absolute;
+    width: 420px;
+    height: 60px;
     top: 400px;
-    font-family: 'Lilita One', cursive;
+    font-family: 'Lilita One' cursive;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 27px;
     line-height: 65px;
+    display: flex;
+    align-items: center;
     background: linear-gradient(270deg, #0D47A1 0%, #441066 100%, #C5D3E9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    margin-right: auto;
 }
 
+.jam li {
+    display: inline-block;
+    margin-right: 42px !important;
+}
 
+.jaya {
+    width: 166px;
+    height: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-color: #0D47A1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
