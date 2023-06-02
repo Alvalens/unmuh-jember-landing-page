@@ -209,6 +209,15 @@ nav {
     background: none;
 }
 
+.cta1 {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
 .cta:before {
     content: "";
     position: absolute;
@@ -222,6 +231,19 @@ nav {
     transition: all 0.3s ease;
 }
 
+.cta1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #C5D3E9;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
 .cta span {
     position: relative;
     font-family: "Ubuntu", sans-serif;
@@ -229,6 +251,15 @@ nav {
     font-weight: 700;
     letter-spacing: 0.05em;
     color: #234567;
+}
+
+.cta1 span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #ffffff;
 }
 
 .cta svg {
@@ -244,16 +275,43 @@ nav {
     transition: all 0.3s ease;
 }
 
+.cta1 svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #ffffff;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
 .cta:hover:before {
     width: 100%;
     background: #b1dae7;
+}
+
+.cta1:hover:before {
+    width: 100%;
+    background:#FFB703;
+    ;
 }
 
 .cta:hover svg {
     transform: translateX(0);
 }
 
+.cta1:hover svg {
+    transform: translateX(0);
+}
+
 .cta:active {
+    transform: scale(0.95);
+}
+
+.cta1:active {
     transform: scale(0.95);
 }
 
@@ -269,6 +327,7 @@ nav {
     --bg-color-light: #d12828;
     --text-color-hover: #ec4040;
     --box-shadow-color: #fc2b2b6c;
+    
 }
 
 .sutter2 {
@@ -340,6 +399,10 @@ nav {
 }
 
 .card:hover p {
+    color: var(--text-color-hover);
+}
+
+.card:hover a{
     color: var(--text-color-hover);
 }
 
@@ -826,4 +889,53 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.allin {
+    background-color: #d12828;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    padding: 10px 25px;
+    font-size: 14px;
+}
+
+.modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    height: 100vh;
+    width: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    background-color: #fff;
+     width: 600px;
+     max-width: 100%;
+     padding: 30px 50px;
+     border-radius: 5px;
+     box-shadow: rgba(0, 0, 0, 0.2);
+     text-align: center;
+}
+
+.modal h1 {
+    margin: 0;
+}
+
+.modal p {
+    font-size: 14px;
+    opacity: 0.7;
 }
