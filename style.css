@@ -832,7 +832,7 @@ nav {
     font-weight: 700 !important;
     font-size: 70px !important;
     line-height: 65px !important;
-    background: linear-gradient(270deg, #C5D3E9 0%, #104EAD 100%);
+    background: linear-gradient(270deg, #f1f6fd 50%, #104EAD 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -848,36 +848,34 @@ nav {
     margin-bottom: 30px;
 }
 
-.countdown {
-    font-family: 'Lilita One', cursive;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    background: linear-gradient(270deg, #D2DFF2 0%, #B5C8E6 14.58%, #9BB4DB 28.12%, #7B9BCE 44.27%, #6288C4 56.77%, #507ABD 66.15%, #3C6BB4 76.04%, #0D47A1 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+.time-content {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
 }
 
-.jam {
-    list-style: none;
-    font-family: 'Lilita One', cursive;
-    font-style: normal;
+.time {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time .angka, .time .teksis {
+    color: #0D47A1;
     font-weight: 700;
+}
+
+.time .angka {
+    font-size: 60px;
+    line-height: 65px;
+    font-size: normal;
+}
+
+.time .teksis {
     font-size: 24px;
     line-height: 65px;
-    background: linear-gradient(270deg, #C5D3E9 0%, #104EAD 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    margin-right: auto;
-}
-
-.jam li {
-    display: inline-block;
-    margin-right: 28px;
+    font-size: normal;
+    text-transform: capitalize;
 }
 
 .brothree {
@@ -1018,13 +1016,13 @@ nav {
     position: absolute;
     width: 40px;
     border-radius: 50%;
-    right: -20px;
+    right: 20px;
     top: 32px;
     z-index: 10;
 }
 
 .right-container .fa-solid {
-    left: -20px;
+    left: 85%;
 }
 
 .timeline::after {
@@ -1066,6 +1064,7 @@ nav {
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
+    border-right: solid transparent;
     border-left: 15px solid #fff;
     right: -15px;
 }
