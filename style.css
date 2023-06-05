@@ -1111,3 +1111,28 @@ nav {
         left: 15px;
     }
 }
+
+.satu {
+    background-color: #0D47A1;
+    text-align: center;
+    width: 1300px;
+    height: 486px;
+    padding-top: 50px;
+}
+
+
+
+.hayya {
+    position: absolute;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #FFC0C7;
+    width:  444px;
+    height: 29px;
+    left: 420px;
+    top: 176px;
+}
